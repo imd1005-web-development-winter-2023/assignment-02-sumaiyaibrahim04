@@ -1,229 +1,531 @@
-<!DOCTYPE html>
-<html>
+/*
+  CSS File
 
-<head>
-  <title>Assignment 02</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  My Colour palette
+  #f4e1c3  beige
+  #8c4c13  brown
+  #f4cfd9  light pink
+  #f36b2b  orange
+  #4f565c  grey
+  #f0687f  hot pink
+  #ffffff white
+*/
 
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="style.css" />
-  <!--google fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
-  <!--fontawesome-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
-<body>
-  <!--Header section-->
-  <section>
-    <header>
-      <div class="header">
-        <div class="container--header">
-          <h2 class="sr-only">Site header</h2>
+/****** Body *******/
+body {
+  background-color: white;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-          <div class="header--bar">
-            <nav class="header--bar--nav">
-              <h3 class="sr-only">Site navigation</h3>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Menu</a></li>
-              </ul>
-            </nav>
-            <img class="header--bar--logo" src="bakery-logo.png" alt="Sweet space logo" />
+/****** Container classes *******/
+.container--header {
+  max-width: 1000px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-            <nav class="header--bar--nav">
-              <h3 class="sr-only">Site navigation</h3>
-              <ul>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <h1 class="sr-only">Site header</h1>
+.container--hero {
+  max-width: 800px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: 30rem;
+  margin-right: auto;
+  position: relative;
+}
 
-      <!--Hero image-->
-      <div class="hero-image">
-        <img class="hero--flex--image" src="donut.png" alt="Picture of a donut with a heart shaped hole on a fork" />
-      </div>
-  </section>
+.container--products {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  <!--Hero section-->
-  <section>
-    <div class="hero">
-      <div class="container--hero">
-        <div class="hero--flex">
-          <!-- Photo by Jens Mahnke: https://www.pexels.com/photo/person-holding-white-snes-controller-776092/ -->
+.container--about {
+  max-width: 900px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container--new--products {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container--cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+
+}
+
+.container--footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  gap: 2rem;
+  padding-bottom: 2rem;
+
+}
+
+/****** Buttons styles *******/
+.btn--menu {
+  background-color: #f0687f;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #f4e1c3;
+}
+
+.btn--learnmore {
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #f0687f;
+}
+
+a h1 {
+  text-decoration: none;
+}
+
+.btn--readmore {
+  background-color: #f4cfd9;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #4f565c;
+  margin-left: 5rem;
+}
+
+.btn--ordernow {
+  background-color: #f0687f;
+  border-radius: 50px;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  margin-left: 4rem;
+}
+
+.sub {
+  border-style: solid;
+  border-color: #f4cfd9;
+  border-width: 3px;
+  background-color: #f0687f;
+  color: #f4cfd9;
+  font-weight: 750;
+  padding: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.btn--menu:hover {
+  background-color: #4f565c;
+}
+
+.btn--learnmore:hover {
+  color: #f4e1c3;
+  background-color: #4f565c;
+}
+
+.product img:hover {
+  background-color: #c2ab86;
+}
+
+.btn--readmore:hover {
+  color: #f4cfd9;
+  background-color: #4f565c;
+}
+
+.btn--ordernow:hover {
+  color: white;
+  background-color: #4f565c;
+}
+
+.sub:hover {
+  color: #f0687f;
+  background-color: #f4cfd9;
+}
+
+/****** Input box section *******/
+.email--box {
+  border-style: none;
+  padding: 5px;
+  color: #4f565c;
+}
+
+/****** Header section *******/
+.header {
+  background-color: #f4e1c3;
+}
+
+.header--bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header--bar--logo {
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.header--bar--nav ul {
+  display: flex;
+  gap: 4rem;
+  list-style-type: none;
+}
+
+.header--bar--nav ul li {
+  font-weight: 600;
+}
+
+.header--bar--nav ul li a {
+  color: #8c4c13;
+  text-decoration: none;
+}
+
+.header--bar--nav ul li a:hover {
+  color: #f0687f;
+}
+
+/****** Hero section *******/
+.hero {
+  background-color: #f4e1c3;
+  padding: 7rem 0 8rem 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero--flex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero--flex--image {
+  position: absolute;
+  top: 7.6rem;
+  right: 34rem;
+  height: 27rem;
+  object-fit: cover;
+}
+
+.hero--flex--content {
+  margin-right: 3rem;
+  width: 60%;
+}
+
+.hero--flex--content h2 {
+  color: #f0687f;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero--flex--content p {
+  color: #8c4c13;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/****** Products section *******/
+.product {
+  background-color: #f4cfd9;
+  padding: 5rem 0 5rem 0;
+}
+
+.product h2 {
+  color: #4f565c;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.product a {
+  text-decoration: none;
+}
+
+.product h1 {
+  color: #4f565c;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.product p {
+  color: #4f565c;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.product .products {
+  margin: 3rem 0 3rem 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  list-style-type: none;
+}
+
+.product--image {
+  background-color: #f4e1c3;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  object-fit: cover;
+  box-shadow: 0 5px 4px -4px #777;
+}
+
+.product h1:hover {
+  color: #f36b2b;
+}
+
+/****** About section *******/
+.about {
+  background-color: #8c4c13;
+  padding: 7rem 0 7rem 0;
+}
+
+.about--flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+}
+
+.about--flex--image {
+  height: 20rem;
+  background-color: #f4e1c3;
+  object-fit: cover;
+  border-radius: 100%;
+  padding: 1rem;
+  margin-right: 5rem;
+}
+
+.about--flex--content {
+  width: 60%;
+}
+
+.about--flex--content h2 {
+  color: #f4e1c3;
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+.about--flex--content p {
+  color: #f4e1c3;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-left: 5rem;
+}
+
+/****** New products/cards section *******/
+
+.nph2 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+  color: #8c4c13;
+  background-color: white;
+  margin-top: 3rem;
+}
+
+.card--image {
+  background-color: #f4e1c3;
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  padding: 1rem;
+  object-fit: cover;
+  box-shadow: 0 5px 4px -4px #777;
+}
+
+.cards {
+  display: flex;
+  list-style: none;
+}
+
+.card {
+  background-color: #f4e1c3;
+  height: 400px;
+  width: 250px;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 4px -4px #777;
+  justify-content: center;
+  padding-top: 0.5rem;
+}
+
+.card h2 {
+  margin-top: 1.5rem;
+  color: #8c4c13;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: #8c4c13;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.card h3 {
+  color: #f36b2b;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-image {
+  background-color: #f4e1c3;
+  height: 140px;
+  margin-top: 0.5rem;
+  padding: 5px;
+  margin-left: 3rem;
+
+}
+
+.vm {
+  margin-left: 91rem;
+  color: #8c4c13;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.vm:hover {
+  color: #f36b2b;
+}
 
 
-          <div class="hero--flex--content">
-            <h2>Baked with love</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              possimus id hic ipsum, consequuntur magni facere dicta,
-              laborum tempore illo ullam commodi odio est voluptatum
-              placeat. Repellat praesentium qui quaerat.
-            </p>
-            <a class="btn--menu" href="#">Our Menu</a>
-            <a class="btn--learnmore" href="#">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+/****** Footer classes *******/
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+  background-color: #f0687f;
+  color: #f4cfd9;
+  text-align: center;
+  margin-top: 2rem;
+  justify-content: center;
+}
 
-  <!--Products section-->
-  <section>
-    <div class="product">
-      <div class="container--products">
-        <h2>Products</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, repudiandae?</p>
+.footer form {
+  margin-bottom: 3rem;
+}
 
-        <ul class="products">
-          <li>
-            <a class="btn--products" href="#"> <img class="product--image" src="cake-icon.png" alt="Cake slice icon" />
-              <h1>
-                Cakes
-              </h1>
-            </a>
+.footer--nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  gap: 1rem;
+  list-style-type: none;
+  border-left: 3px solid #f4cfd9;
+}
 
-          </li>
-          <li>
-            <a class="btn--products" href="#"><img class="product--image" src="cookies-icon.png"
-                alt="Icon of two cookies" />
-              <h1>
-                Cookies
-              </h1>
-            </a>
-          </li>
-          <li>
-            <a class="btn--products" href="#"><img class="product--image" src="donut-icon.png" alt="Donut icon" />
-              <h1>
-                Donuts
-              </h1>
-            </a>
-          </li>
-          <li>
-            <a class="btn--products" href="#"><img class="product--image" src="croissant-icon.png"
-                alt="Croissant icon" />
-              <h1>
-                Pastry
-              </h1>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+.footer--nav ul li {
+  font-weight: 600;
+}
 
-  <!--About section-->
-  <section>
-    <div class="about">
-      <div class="container--about">
-        <div class="about--flex">
-          <!-- Photo by Jens Mahnke: https://www.pexels.com/photo/person-holding-white-snes-controller-776092/ -->
-          <img class="about--flex--image" src="cupcake.png" alt="Picture of a cupcake" />
+.footer--nav ul li a {
+  color: #f4cfd9;
+  text-decoration: none;
+}
 
-          <div class="about--flex--content">
-            <h2>About Us</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, commodi minus dolores dolorem sed
-              quod possimus officia minima, incidunt accusamus ut delectus eligendi nobis voluptatibus porro laborum
-              a. Non nam cum amet impedit voluptate. A, consequuntur omnis ea consequatur voluptatibus nam adipisci!
-              Sed voluptatibus debitis dolor facere magnam. Esse excepturi fuga, minima iusto fugit doloribus?</p>
-            <a class="btn--readmore" href="#">Read more</a>
+.footer--nav ul li a:hover {
+  color: #4f565c;
+}
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </section><!--
+.socials ul {
+  margin-left: 10rem;
+  color: #f4cfd9;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style-type: none;
+  border-left: 3px solid #f4cfd9;
+}
+
+.socials ul li a {
+  color: #f4cfd9;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.socials ul li a:hover {
+  color: #4f565c;
+}
+
+footer {
+  background-color: #f0687f;
+}
+
+.footer--logo {
+  margin-left: auto;
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.footer p {
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+.footer {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  color: #f4cfd9;
+  background-color: #f0687f;
+  padding-bottom: 2rem;
+}
 
 
-    <!--New products section-->
-  <!--<div class ="np">-->
-  <h2 class="nph2">New Products</h2>
-  <section class="container--cards">
-    <ul class="cards">
-      <li>
-        <div class="card">
-          <h2>Strawberry Cake</h2>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <img class="card-image" src="slice cake.png" alt="Image of a cake slice" />
-          <h3>$00.00</h3>
-          <a class="btn--ordernow" href="#">Order now</a>
-      </li>
-      <li>
-        </div>
-        <div class="card">
-          <h2>Pink Donut</h2>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <img class="card-image" src="2donuts.png" alt="Image of two donuts" />
-          <h3>$00.00</h3>
-          <a class="btn--ordernow" href="#">Order now</a>
-      </li>
-      <li>
-        <div class="card">
-          <h2>Fun Cookie</h2>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <img class="card-image" src="cookie.png" alt="Image of a cookie" />
-          <h3>$00.00</h3>
-          <a class="btn--ordernow" href="#">Order now</a>
-        </div>
-      </li>
-      </div>
-  </section>
-  <a href="#" class="vm">View more</a>
-  <!--</div>-->
 
-  <!--Footer section-->
-  </section>
-  </main>
-  <footer>
-    <div class="footer">
-      <!--1st div-->
-      <div class="container--footer">
-        <h2 class="sr-only">Site footer</h2>
-        <form>
-          <img class="header--bar--logo" src="bakery-logo2.png" alt="Sweet space logo" />
-          <label for="email"><br>Subscribe to our Newsletter for
-            the latest<br>updates and exclusive offers!<br></label><br>
-          <input class="email--box" type="text" id="email" name="email" autocomplete="email"
-            placeholder="Email address" />
-          <button class="sub" type="subscribe">Subscribe</button>
-        </form>
-      </div>
-      <!--2nd div-->
-      <nav class="footer--nav">
-        <h3 class="sr-only">Footer navigation</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contant</a></li>
-        </ul>
-      </nav>
-      <!--3rd div-->
-      <div class="socials">
-        <ul>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <p class="copyright">Copyright (c) 2023 IMD1005 - Web Development</p>
-  </footer>
-</body>
-
-</html>
+/****** Screen reader text *******/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
