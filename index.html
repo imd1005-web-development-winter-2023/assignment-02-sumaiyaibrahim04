@@ -1,29 +1,220 @@
 <!DOCTYPE html>
-<html lang="en-ca">
-  <head>
-    <!-- Set the page title -->
-    <title>Assignment 02</title>
+<html>
 
-    <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
+<head>
+  <title>Assignment 02</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Specifies the document mode for Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+  <!--fontawesome-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="reset.css" />
+<body>
+  <!--Header section-->
+  <section>
+    <header>
+      <div class="header">
+        <div class="container--header">
+          <h2 class="sr-only">Site header</h2>
 
-    <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--
+          <div class="header--bar">
+            <nav class="header--bar--nav">
+              <h3 class="sr-only">Site navigation</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+              </ul>
+            </nav>
+            <img class="header--bar--logo" src="bakery-logo.png" alt="Sweet space logo" />
 
-      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+            <nav class="header--bar--nav">
+              <h3 class="sr-only">Site navigation</h3>
+              <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="sr-only">Site header</h1>
 
-    -->
-  </body>
+  <!--Hero section-->
+  <section>
+    <div class="hero">
+      <div class="container--hero">
+        <div class="hero--flex">
+          <div class="hero--flex--content">
+            <h2>Baked with love</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+              possimus id hic ipsum, consequuntur magni facere dicta,
+              laborum tempore illo ullam commodi odio est voluptatum
+              placeat. Repellat praesentium qui quaerat.
+            </p>
+            <a class="btn--menu" href="#">Our Menu</a>
+            <a class="btn--learnmore" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Products section-->
+  <section>
+    <div class="product">
+      <div class="container--products">
+        <h2>Products</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, repudiandae?</p>
+
+        <ul class="products">
+          <li>
+            <a class="btn--products" href="#"> <img class="product--image" src="cake-icon.png" alt="Cake slice icon" />
+              <h1>
+                Cakes
+              </h1>
+            </a>
+
+          </li>
+          <li>
+            <a class="btn--products" href="#"><img class="product--image" src="cookies-icon.png"
+                alt="Icon of two cookies" />
+              <h1>
+                Cookies
+              </h1>
+            </a>
+          </li>
+          <li>
+            <a class="btn--products" href="#"><img class="product--image" src="donut-icon.png" alt="Donut icon" />
+              <h1>
+                Donuts
+              </h1>
+            </a>
+          </li>
+          <li>
+            <a class="btn--products" href="#"><img class="product--image" src="croissant-icon.png"
+                alt="Croissant icon" />
+              <h1>
+                Pastries
+              </h1>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!--About section-->
+  <section>
+    <div class="about">
+      <div class="container--about">
+        <div class="about--flex">
+          <!-- Photo by Jens Mahnke: https://www.pexels.com/photo/person-holding-white-snes-controller-776092/ -->
+          <img class="about--flex--image" src="cupcake.png" alt="Picture of a cupcake" />
+
+          <div class="about--flex--content">
+            <h2>About Us</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, commodi minus dolores dolorem sed
+              quod possimus officia minima, incidunt accusamus ut delectus eligendi nobis voluptatibus porro laborum
+              a. Non nam cum amet impedit voluptate. A, consequuntur omnis ea consequatur voluptatibus nam adipisci!
+              Sed voluptatibus debitis dolor facere magnam. Esse excepturi fuga, minima iusto fugit doloribus?</p>
+            <a class="btn--readmore" href="#">Read more</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--
+
+
+    <!--New products section-->
+  <!--<div class ="np">-->
+  <h2 class="nph2">New Products</h2>
+  <section class="container--cards">
+    <ul class="cards">
+      <li>
+        <div class="card">
+          <h2>Strawberry Cake</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <img class="card-image" src="slice cake.png" alt="Image of a cake slice" />
+          <h3>$00.00</h3>
+          <a class="btn--ordernow" href="#">Order now</a>
+      </li>
+      <li>
+        </div>
+        <div class="card">
+          <h2>Pink Donut</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <img class="card-image" src="2donuts.png" alt="Image of two donuts" />
+          <h3>$00.00</h3>
+          <a class="btn--ordernow" href="#">Order now</a>
+      </li>
+      <li>
+        <div class="card">
+          <h2>Fun Cookie</h2>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <img class="card-image" src="cookie.png" alt="Image of a cookie" />
+          <h3>$00.00</h3>
+          <a class="btn--ordernow" href="#">Order now</a>
+        </div>
+      </li>
+      </div>
+  </section>
+  <a href="#" class="vm">View more</a>
+  <!--</div>-->
+
+  <!--Footer section-->
+  </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <!--1st div-->
+      <div class="container--footer">
+        <h2 class="sr-only">Site footer</h2>
+        <form>
+          <img class="header--bar--logo" src="bakery-logo2.png" alt="Sweet space logo" />
+          <label for="email"><br>Subscribe to our Newsletter for
+            the latest<br>updates and exclusive offers!<br></label><br>
+          <input class="email--box" type="text" id="email" name="email" autocomplete="email"
+            placeholder="Email address" />
+          <button class="sub" type="subscribe">Subscribe</button>
+        </form>
+      </div>
+      <!--2nd div-->
+      <nav class="footer--nav">
+        <h3 class="sr-only">Footer navigation</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contant</a></li>
+        </ul>
+      </nav>
+      <!--3rd div-->
+      <div class="socials">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">Copyright (c) 2023 IMD1005 - Web Development</p>
+  </footer>
+</body>
+
 </html>
